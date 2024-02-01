@@ -1,0 +1,28 @@
+nav {
+  display: flex;
+  align-items: center;
+  height: 64px;
+  padding-left: 60px;
+  background-color: var(--blue);
+}
+
+button {
+  height: 100%;
+  color: var(--white);
+  background-color: var(--blue);
+  border: none;
+  cursor: pointer;
+  transition: all 0.3s;
+}
+
+button:hover {
+  background-color: var(--blue-dark);
+}
+
+.all {
+  width: 120px;
+}
+
+.favorite {
+  width: 170px;
+}
