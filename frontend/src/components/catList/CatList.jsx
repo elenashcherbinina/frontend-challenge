@@ -7,7 +7,6 @@ export default function CatList({ cats }) {
     JSON.parse(localStorage.getItem('favorites') || '[]'),
   );
 
-
   const handleToggleFavourite = (id) => {
     const isFavourited = storageItem.includes(id);
 
@@ -20,6 +19,10 @@ export default function CatList({ cats }) {
       setStorageItem(newStorageItem);
       localStorage.setItem('favorites', JSON.stringify(newStorageItem));
     }
+  };
+
+  const handleScroll = (e) => {
+    console.log('scroll');
   };
 
   return (
