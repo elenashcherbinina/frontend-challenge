@@ -27,7 +27,6 @@ const catsSlice = createSlice({
         state.error = action.error;
       })
       .addCase(fetchMoreCats.pending, (state) => {
-        //state.loadingStatus = 'loading';
         state.error = null;
       })
       .addCase(fetchMoreCats.fulfilled, (state, action) => {
