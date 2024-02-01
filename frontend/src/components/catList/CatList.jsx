@@ -21,10 +21,6 @@ export default function CatList({ cats }) {
     }
   };
 
-  const handleScroll = (e) => {
-    console.log('scroll');
-  };
-
   return (
     <div className={styles.list}>
       {cats.length > 0 &&
